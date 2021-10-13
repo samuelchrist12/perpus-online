@@ -23,3 +23,5 @@ Route::get('/koleksi', [BukuController::class, 'index'])->name('koleksi');
 Route::get('/koleksi/create',[BukuController::class, 'create'])->name('koleksi.create');
 Route::post('/koleksi/store',[BukuController::class, 'store'])->name('koleksi.store');
 Route::get('/koleksi/{koleksi}',[BukuController::class, 'show'])->name('koleksi.show');
+
+// Route
