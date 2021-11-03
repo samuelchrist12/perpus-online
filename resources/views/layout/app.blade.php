@@ -20,18 +20,20 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ route('buku.index') }}">Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ route('materi.index') }}">Bahan Ajar</a>
+                    </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('koleksi') }}">Koleksi</a>
                     </li> --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Koleksi
+                        Tambah Koleksi
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {{-- <li><a class="dropdown-item" href="{{ route('koleksi') }}">Isi Koleksi</a></li> --}}
-                            <li><a class="dropdown-item" href="{{ route('buku.index') }}">Koleksi Buku</a></li>
-                            <li><a class="dropdown-item" href="{{ route('materi.index') }}">Koleksi Modul</a></li>
-                            <li><a class="dropdown-item" href="#">Koleksi Powerpoint</a></li>
                             <li><a class="dropdown-item" href="{{ route('buku.create') }}">Tambah Buku</a></li>
                             <li><a class="dropdown-item" href="{{ route('materi.create') }}">Tambah Materi</a></li>
                         </ul>

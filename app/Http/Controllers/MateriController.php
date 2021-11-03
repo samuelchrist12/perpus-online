@@ -79,7 +79,7 @@ class MateriController extends Controller
      */
     public function show(Materi $materi)
     {
-        //
+        return view('materi.show', ['materi' => $materi]);
     }
 
     /**
