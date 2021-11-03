@@ -14,8 +14,8 @@ class BukuController extends Controller
      */
     public function index()
     {
-        $koleksis = Buku::all();
-        return view('koleksi.index',['koleksis'=>$koleksis]);
+        $bukus = Buku::all();
+        return view('buku.index',['bukus'=>$bukus]);
     }
 
     /**
@@ -25,7 +25,7 @@ class BukuController extends Controller
      */
     public function create()
     {
-        return view('koleksi.create');
+        return view('buku.create');
     }
 
     /**
@@ -38,14 +38,11 @@ class BukuController extends Controller
     {
         $validateData = $request->validate([
             'judul' => 'required|max:50',
-            'tipe' => 'required|max:20',
             'kategori' => 'required|max:20',
             'pengarang' => 'required',
-            'kelas' => 'required',
-            'mapel' => 'required',
             'tahun_terbit' => 'required',
             'sinopsis' => 'required',
-            'gambar' => 'required|file|image|max:3000'
+            'gambar' => 'required|file|image|max:1000'
         ]);
         // dump($request);
         $extGambar = $request->gambar->getClientOriginalExtension();
@@ -54,17 +51,14 @@ class BukuController extends Controller
         // dump($validateData);
         $buku = new Buku();
         $buku->judul = $validateData['judul'];
-        $buku->tipe = $validateData['tipe'];
         $buku->kategori = $validateData['kategori'];
         $buku->pengarang = $validateData['pengarang'];
-        $buku->kelas = $validateData['kelas'];
-        $buku->mapel = $validateData['mapel'];
         $buku->tahun_terbit = $validateData['tahun_terbit'];
         $buku->sinopsis = $validateData['sinopsis'];
         $buku->gambar = $pathGambar;
         $buku->save();
 
-        return redirect()->route('koleksi.create')->with('pesan', "Koleksi Berhasil Ditambah");
+        return redirect()->route('buku.create')->with('pesan', "Buku berhasil ditambah");
     }
 
     /**
@@ -73,9 +67,9 @@ class BukuController extends Controller
      * @param  \App\Models\Buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function show(Buku $koleksi)
+    public function show(Buku $buku)
     {
-        return view('koleksi.show', ['koleksi' => $koleksi]);
+        return view('buku.show', ['buku' => $buku]);
     }
 
     /**
