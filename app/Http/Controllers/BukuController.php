@@ -69,6 +69,14 @@ class BukuController extends Controller
      */
     public function show(Buku $buku)
     {
+        if ($buku->kategori == "nonfiksi")
+        {
+            $buku->kategori = "Non Fiksi";
+        }
+        else
+        {
+            $buku->kategori = "Fiksi";
+        }
         return view('buku.show', ['buku' => $buku]);
     }
 
