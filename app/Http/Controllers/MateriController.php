@@ -24,7 +24,7 @@ class MateriController extends Controller
      */
     public function create()
     {
-        //
+        return view('materi.create');
     }
 
     /**
@@ -35,7 +35,39 @@ class MateriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validateData = $request->validate([
+            'judul' => 'required|max:50',
+            'kategori' => 'required|max:20',
+            'mata_pelajaran' => 'required',
+            'kelas' => 'required',
+            'guru' => 'required',
+            'tahun_terbit' => 'required',
+            'sinopsis' => 'required',
+            'gambar' => 'required|file|image|max:1000',
+            'file' => 'required|file|'
+        ]);
+        // dump($request);
+        $extGambar = $request->gambar->getClientOriginalExtension();
+        $pathGambar = "buku-".time().".".$extGambar;
+        $pathStore = $request->gambar->move(public_path('gambar/buku'), $pathGambar);
+        // dump($validateData);
+        $extFile = $request->file->getClientOriginalExtension();
+        $pathFile = "materi-".time().".".$extFile;
+        $request->file->move(public_path('modul'), $pathGambar);
+
+        $materi = new Materi();
+        $materi->judul = $validateData['judul'];
+        $materi->kategori = $validateData['kategori'];
+        $materi->mata_pelajaran = $validateData['mata_pelajaran'];
+        $materi->kelas = $validateData['kelas'];
+        $materi->guru = $validateData['guru'];
+        $materi->tahun_terbit = $validateData['tahun_terbit'];
+        $materi->sinopsis = $validateData['sinopsis'];
+        $materi->gambar = $pathGambar;
+        $materi->file = $pathFile;
+        $materi->save();
+
+        return redirect()->route('materi.create')->with('pesan', "Buku berhasil ditambah");
     }
 
     /**

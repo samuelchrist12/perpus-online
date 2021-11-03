@@ -30,10 +30,10 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             {{-- <li><a class="dropdown-item" href="{{ route('koleksi') }}">Isi Koleksi</a></li> --}}
                             <li><a class="dropdown-item" href="{{ route('buku.index') }}">Koleksi Buku</a></li>
-                            <li><a class="dropdown-item" href="{{ route('koleksi') }}">Koleksi Modul</a></li>
-                            <li><a class="dropdown-item" href="{{ route('koleksi') }}">Koleksi Powerpoint</a></li>
+                            <li><a class="dropdown-item" href="#">Koleksi Modul</a></li>
+                            <li><a class="dropdown-item" href="#">Koleksi Powerpoint</a></li>
                             <li><a class="dropdown-item" href="{{ route('buku.create') }}">Tambah Buku</a></li>
-                            <li><a class="dropdown-item" href="{{ route('buku.create') }}">Tambah Materi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('materi.create') }}">Tambah Materi</a></li>
                         </ul>
                     </li>
                 </ul>
