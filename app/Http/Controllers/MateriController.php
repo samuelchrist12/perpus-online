@@ -14,7 +14,8 @@ class MateriController extends Controller
      */
     public function index()
     {
-        //
+        $materis = Materi::all();
+        return view('materi.index',['materis'=>$materis]);
     }
 
     /**
