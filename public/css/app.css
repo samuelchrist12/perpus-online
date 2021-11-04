@@ -1,8 +1,41 @@
 body{
-
     background-color: #FEFFEA;
 }
 .navatas{
     background-color: #FEFFEA;
     box-shadow: 0px 0px 2px #000000;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+/* div{
+    border: 1px solid black;
+} */
+.navButton{
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: #FFED79;
+    border:none;
+    color: #353535;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.searchBar{
+    margin-bottom: 2em;
+    background-color: #F0F1D9;
+    padding:0.5em;
+    border-radius: 20px;
+}
+.searchBarForm{
+    background-color: #F0F1D9;
+    border-radius: 20px;
+    border:none;
+}
+.searchBarBtn{
+    background-color: #FFED79;
+    border:none;
+    border-radius: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
