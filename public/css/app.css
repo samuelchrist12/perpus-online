@@ -1,3 +1,6 @@
+/* div{
+    border: 1px solid black;
+} */
 body{
     background-color: #FEFFEA;
 }
@@ -8,9 +11,6 @@ body{
 .navbar-nav {
     margin-left: auto;
 }
-/* div{
-    border: 1px solid black;
-} */
 .navButton{
     margin-left: 10px;
     margin-top: 5px;
@@ -39,3 +39,24 @@ body{
     padding-left: 2em;
     padding-right: 2em;
 }
+.marginContent{
+    margin-top: 1.2em;
+}
+.logoHome{
+    background-color: #596C8F;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoArea{
+    width: 5em;
+}
+.logoMargin{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
