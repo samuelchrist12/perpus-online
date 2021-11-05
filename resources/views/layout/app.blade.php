@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('/css/allStyle.css') }}">
 </head>
 <body class="warna">
+    <div class="upperBar">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light navatas">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -69,5 +71,7 @@
         @yield('content')
     </main>
     {{--  akhir konten  --}}
+    <div class="bottomBar">
+    </div>
 </body>
 </html>

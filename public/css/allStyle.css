@@ -4,9 +4,20 @@
 body{
     background-color: #FEFFEA;
 }
+.upperBar{
+    width: 100%;
+    height: 1.5em;
+    background-color:#5877af;
+}
+.bottomBar{
+    margin-top:2.5em ;
+    width: 100%;
+    height: 8em;
+    background-color:#5877af;
+}
 .navatas{
     background-color: #FEFFEA;
-    box-shadow: 0px 0px 10px #00000079;
+    box-shadow: 0px 2px 10px #00000079;
 }
 .navbar-nav {
     margin-left: auto;
@@ -45,7 +56,7 @@ body{
     margin-top: 1.2em;
 }
 .logoHome{
-    background-color: #596C8F;
+    background-color: #5877af;
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -67,8 +78,9 @@ body{
     padding-left: 1.5em;
 }
 .homeCard{
-    width:13em;
-    margin-right: 1.5em;
+    width:14em;
+    margin-right: 27.2px;
+    padding:0.5em ;
 }
 .headerTopNav{
     margin-left: 15px;
@@ -83,4 +95,69 @@ body{
 }
 .titleCard{
     background-color: #FFED79 ;
+    border:none;
+    width : 17em;
 }
+.imageCard{
+    background-color: #FEFFEA;
+    border:none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    object-fit: scale-down;
+}
+.autosizeImg{
+    width: 100%;
+    height: 100%;
+
+}
+.contentCard{
+    background-color: #FEFFEA;
+    border:none;
+    box-shadow: 1px 1px 5px #00000079;
+}
+.imageTittleCard{
+    background-color: #FFED79;
+    border:none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnTittle{
+    border-radius: 30px;
+    background-color: #F0F1D9;
+    color: #5877af;
+    border:none;
+    width: 100%;
+    font-weight: bold;
+    padding: 1em;
+}
+.btnContentLink{
+    background-color: #FEFFEA;
+    border: none;
+    padding: 0px;
+    color: #5877af;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.btnContentLink:focus,
+.btnContentLink:active,
+.btnContentLink:hover{
+    background-color: #FEFFEA;
+    border: none;
+    padding: 0px;
+    color: #353535;
+    text-align: left;
+    font-weight: bold;
+}
+.textContentLink{
+    margin-top: 0px;
+    height: 20%;
+}
+
+
