@@ -6,13 +6,13 @@ body{
 }
 .navatas{
     background-color: #FEFFEA;
-    box-shadow: 0px 0px 2px #000000;
+    box-shadow: 0px 0px 10px #00000079;
 }
 .navbar-nav {
     margin-left: auto;
 }
 .navButton{
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 5px;
     border-radius: 20px;
     background-color: #FFED79;
@@ -20,6 +20,8 @@ body{
     color: #353535;
     padding-left: 1em;
     padding-right: 1em;
+    font-weight: bold;
+    font-size: 15px;
 }
 .searchBar{
     margin-bottom: 2em;
@@ -56,11 +58,29 @@ body{
     width: 4em;
 }
 .logoMargin{
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 3em;
 }
 .logoText{
     height: 100%;
     padding-top: 0.5em;
     padding-left: 1.5em;
+}
+.homeCard{
+    width:13em;
+    margin-right: 1.5em;
+}
+.headerTopNav{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top:5px ;
+}
+.headerBottomNav{
+    margin-left: 15px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.titleCard{
+    background-color: #FFED79 ;
 }

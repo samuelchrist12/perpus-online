@@ -41,8 +41,14 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 mb-2 g-4">
+            <div class="card homeCard titleCard">
+                <div class="card h-100">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
         @forelse ($bukus as $buku)
-            <div class="card" style="width: 20rem;">
+            <div class="card homeCard">
                 <div class="card h-100">
                     <a href="{{url('/buku/'.$buku->id)}}">
                         <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="card-img-top d-flex justify-content" alt="...">
@@ -51,7 +57,7 @@
                         <h5 class="card-title">
                             <a href="{{url('/buku/'.$buku->id)}}">{{ $buku->judul }}</a>
                         </h5>
-                        <p class="card-text">{{ $buku->sinopsis }}</p>
+                        <p class="card-text">{{ $buku->pengarang }}</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +84,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 mb-2 g-4">
         @forelse ($bukus as $buku)
-            <div class="card" style="width: 20rem;">
+            <div class="card homeCard">
                 <div class="card h-100">
                     <a href="{{url('/buku/'.$buku->id)}}">
                         <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="card-img-top d-flex justify-content" alt="...">
