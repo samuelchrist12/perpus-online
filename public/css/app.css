@@ -45,18 +45,22 @@ body{
 .logoHome{
     background-color: #596C8F;
     border-radius: 50%;
-    height: 3em;
-    width: 3em;
+    height: 60px;
+    width: 60px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logoArea{
-    width: 5em;
+    width: 4em;
 }
 .logoMargin{
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
-
+.logoText{
+    height: 100%;
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+}
