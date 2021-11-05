@@ -25,6 +25,7 @@
                     <br>
                     {{ $materi->sinopsis }}
                 </p>
+                <a class="btn btn-primary" href="#" role="button">Download</a>
             </div>
         </div>
     </div>
