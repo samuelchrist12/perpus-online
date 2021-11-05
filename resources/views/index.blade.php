@@ -5,6 +5,10 @@
 @section('content')
 <div class="container mt-5">
     <div class="col-md-7 col-lg-12">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
         <h2>Buku</h2>
         <div class="row row-cols-1 row-cols-md-3 mb-2 g-4">
         @forelse ($bukus as $buku)
