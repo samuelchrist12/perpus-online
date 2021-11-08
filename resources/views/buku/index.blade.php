@@ -19,7 +19,7 @@
             <div class="card" style="width: 20rem;">
                 <div class="card h-100">
                     <a href="{{url('/buku/'.$buku->id)}}">
-                        <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="card-img-top d-flex justify-content" alt="...">
+                        <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="autosizeImg" alt="...">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">
