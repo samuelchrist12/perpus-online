@@ -25,6 +25,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    {{-- Buku Section --}}
     <div class="col-md-7 col-lg-12 marginContent">
         <div class="row logoMargin">
             <div class="logoArea">
@@ -73,6 +74,7 @@
             </div>
         @endforelse
     </div>
+    {{-- Materi Section --}}
     <div class="col-md-7 col-lg-12 marginContent">
         <div class="row logoMargin">
             <div class="logoArea">
@@ -100,17 +102,17 @@
                     {{-- <p class="card-text">{{ $buku->pengarang }}</p> --}}
                 </div>
             </div>
-        @forelse ($bukus as $buku)
+        @forelse ($materis as $materi)
             <div class="card homeCard contentCard">
                 {{-- <div class="card h-100 imageCard"> --}}
                 <div class="card imageCard">
-                    <a href="{{url('/buku/'.$buku->id)}}">
-                        <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="autosizeImg" alt="...">
+                    <a href="{{url('/materi/'.$materi->id)}}">
+                        <img src="{{ asset('/gambar/buku/'.$materi->gambar) }}" class="autosizeImg" alt="...">
                     </a>
                 </div>
                 <div class="textContentLink">
                     <p class="card-title text-align-top">
-                        <a href="{{url('/buku/'.$buku->id)}}" class="btn btn-lg btn-light btnContentLink">{{ $buku->judul }}</a>
+                        <a href="{{url('/materi/'.$materi->id)}}" class="btn btn-lg btn-light btnContentLink">{{ $materi->judul }}</a>
                     </p>
                     {{-- <p class="card-text">{{ $buku->pengarang }}</p> --}}
                 </div>
