@@ -41,7 +41,7 @@
                 <h2>Buku</h2>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mb-2 g-4">
+        <div class="row row-cols-1 row-cols-md-3 mb-2 g-4 centerItms">
             <div class="card homeCard titleCard">
                 <div class="card h-100 imageTittleCard">
                     <img src="" class="card-img-top d-flex justify-content" alt="...">
@@ -90,7 +90,7 @@
                 <h2>Modul</h2>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mb-2 g-4">
+        <div class="row row-cols-1 row-cols-md-3 mb-2 g-4 centerItms">
             <div class="card homeCard titleCard">
                 <div class="card h-100 imageTittleCard">
                     <img src="" class="card-img-top d-flex justify-content" alt="...">
