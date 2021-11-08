@@ -7,14 +7,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>@yield('title','Perpustakaan Lab UM')</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/allStyle.css') }}">
 </head>
 <body class="warna">
+    <div class="upperBar">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light navatas">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('/asset/logoSekolah.png') }}"alt="" width="45" height="auto" class="d-inline-block align-text-center">
-                &nbsp; Perpustakaan Lab
+                <div class="row">
+                    <div class="col-2">
+                        <img src="{{ asset('/asset/logoSekolah.png') }}"alt="" width="55" height="auto" class="d-inline-block align-text-center">
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <h5 class="headerTopNav"><b>Perpustakaan Digital</b></h5>
+                        </div>
+                        <div class="row">
+                            <p class="headerBottomNav"> SMP Laboratorium UM</p>
+                        </div>
+                    </div>
+                </div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,5 +71,7 @@
         @yield('content')
     </main>
     {{--  akhir konten  --}}
+    <div class="bottomBar">
+    </div>
 </body>
 </html>
