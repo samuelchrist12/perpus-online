@@ -56,10 +56,15 @@
         @forelse ($bukus as $buku)
             <div class="card homeCard contentCard">
                 {{-- <div class="card h-100 imageCard"> --}}
-                <div class="card imageCard">
-                    <a href="{{url('/buku/'.$buku->id)}}">
-                        <img src="{{ asset('/gambar/buku/'.$buku->gambar) }}" class="autosizeImg" alt="...">
-                    </a>
+                <div class="imageCardUnderlay">
+                    <div class="card imageCard">
+                        <a href="{{url('/buku/'.$buku->id)}}">
+                            <img src="{{ asset('/gambar/buku/buku-1635900770.png') }}" class="autosizeImg" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="centerHomeCard">
+                    &nbsp;
                 </div>
                 <div class="textContentLink">
                     <p class="card-title text-align-top">

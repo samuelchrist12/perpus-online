@@ -79,7 +79,7 @@ body{
 }
 .homeCard{
     width:12em;
-    margin-right: 20px;
+    margin-right: 15px;
     padding:0.5em ;
 }
 .headerTopNav{
@@ -102,6 +102,10 @@ body{
     background-color: #FEFFEA;
     border:none;
     box-shadow: 1px 1px 5px #00000079;
+     /* position: relative;
+    display: flex;
+    align-items: center; */
+    justify-content: center;
 }
 .imageCard{
     background-color: #FEFFEA;
@@ -110,11 +114,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 80%; */
-    object-fit: scale-down;
+}
+.imageCardUnderlay{
+    height: 75%;
+}
+.centerHomeCard{
+    height:5%;
 }
 .autosizeImg{
     width: 100%;
+    height: 13em;
+    object-fit: scale-down;
 }
 .imageTittleCard{
     background-color: #FFED79;
