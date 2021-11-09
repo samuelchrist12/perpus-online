@@ -173,4 +173,14 @@ body{
     align-items: center; */
     justify-content: center;
 }
+.formTitle{
+    text-align: center;
+    font-weight: bold;
+}
+.formContent{
+    /* border: 1px black solid; */
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #00000079;
+}
 

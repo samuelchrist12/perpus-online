@@ -115,6 +115,9 @@
                         <img src="{{ asset('/gambar/buku/'.$materi->gambar) }}" class="autosizeImg" alt="...">
                     </a>
                 </div>
+                <div class="centerHomeCard">
+                    &nbsp;
+                </div>
                 <div class="textContentLink">
                     <p class="card-title text-align-top">
                         <a href="{{url('/materi/'.$materi->id)}}" class="btn btn-lg btn-light btnContentLink">{{ $materi->judul }}</a>
