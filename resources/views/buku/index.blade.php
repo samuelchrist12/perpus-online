@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','home')
+@section('title','Buku')
 
 @section('content')
 <div class="container mt-5">

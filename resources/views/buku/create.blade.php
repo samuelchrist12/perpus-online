@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Pinjam Buku')
+@section('title', 'Tambah Buku')
 
 @section('content')
     <div class="container">
