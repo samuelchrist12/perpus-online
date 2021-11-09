@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','Detail')
+@section('title', $materi->judul)
 
 @section('content')
 <div class="container mt-5">

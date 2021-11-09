@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','home')
+@section('title','Bahan Ajar')
 
 @section('content')
 <div class="container mt-5">

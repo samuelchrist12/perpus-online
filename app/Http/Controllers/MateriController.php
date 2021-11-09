@@ -54,7 +54,7 @@ class MateriController extends Controller
         // dump($validateData);
         $extFile = $request->file->getClientOriginalExtension();
         $pathFile = "materi-".time().".".$extFile;
-        $request->file->move(public_path('modul'), $pathGambar);
+        $request->file->move(public_path('modul'), $pathFile);
 
         $materi = new Materi();
         $materi->judul = $validateData['judul'];

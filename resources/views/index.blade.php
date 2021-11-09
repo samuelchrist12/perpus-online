@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title','home')
+@section('title','Beranda')
 
 @section('content')
 <div class="container mt-4">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="textContentLink">
                     <h5 class="card-title text-align-top">
-                        <a href="" class="btn btn-lg btn-light btnTittle">Lebih Lengkap</a>
+                        <a href="{{ route('buku.index') }}" class="btn btn-lg btn-light btnTittle">Lebih Lengkap</a>
                     </h5>
                     {{-- <p class="card-text">{{ $buku->pengarang }}</p> --}}
                 </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="textContentLink">
                     <h5 class="card-title text-align-top">
-                        <a href="" class="btn btn-lg btn-light btnTittle">Lebih Lengkap</a>
+                        <a href="{{ route('materi.index') }}" class="btn btn-lg btn-light btnTittle">Lebih Lengkap</a>
                     </h5>
                     {{-- <p class="card-text">{{ $buku->pengarang }}</p> --}}
                 </div>
