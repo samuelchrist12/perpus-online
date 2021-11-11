@@ -45,16 +45,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary navButton " aria-current="page" href="{{ route('buku.index') }}">Buku</a>
+                        <a class="btn btn-light navButton @yield('btnBuku','') " aria-current="page" href="{{ route('buku.index') }}">Buku</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary navButton " aria-current="page" href="{{ route('materi.index') }}">Bahan Ajar</a>
+                        <a class="btn btn-light navButton " aria-current="page" href="{{ route('materi.index') }}">Bahan Ajar</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="btn btn-primary navButton" href="{{ route('koleksi') }}">Koleksi</a>
                     </li> --}}
                     <li class="nav-item dropdown">
-                        <a class="btn btn-primary navButton dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn btn-light navButton dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Tambah Koleksi
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

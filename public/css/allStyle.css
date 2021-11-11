@@ -10,7 +10,7 @@ body{
     background-color:#5877af;
 }
 .bottomBar{
-    margin-top:2.5em ;
+    margin-top:0em ;
     width: 100%;
     height: 8em;
     background-color:#5877af;
@@ -181,6 +181,19 @@ body{
     /* border: 1px black solid; */
     padding: 1em;
     border-radius: 20px;
+    background-color:#feffea ;
     box-shadow: 1px 1px 5px #00000079;
 }
-
+.backgroundForm{
+    margin:0px;
+    padding: 1.5em ;
+    height: 100%;
+    /* border: red solid 1px; */
+    background-color: #FEFFEA ;
+    /* background-image:
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=990&q=80"
+    ); */
+}
+.backgroundFormImg{
+    position:static;
+}

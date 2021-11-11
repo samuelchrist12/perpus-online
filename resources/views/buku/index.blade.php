@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('title','Buku')
-
+@section('btnBuku', 'disabled')
 @section('content')
 <div class="container mt-5">
     <form class="d-flex searchBar">
