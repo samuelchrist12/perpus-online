@@ -25,7 +25,11 @@
                         <h5 class="card-title">
                             <a href="{{url('/materi/'.$materi->id)}}">{{ $materi->judul }}</a>
                         </h5>
-                        <p class="card-text">{{ $materi->sinopsis }}</p>
+                        <?php
+                            $kalimat = $materi->sinopsis;
+                            $sub_kalimat = substr($kalimat,0,30);
+                        ?>
+                        <p class="card-text">{{ $sub_kalimat }}....</p>
                     </div>
                 </div>
             </div>
